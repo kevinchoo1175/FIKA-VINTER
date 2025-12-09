@@ -1,0 +1,406 @@
+@font-face{
+    font-family: titulo;
+    src: url(FONTS/PatrickHandSC-Regular.ttf);
+    font-weight: normal; 
+    font-style: normal;
+}
+@font-face{
+    font-family: parrafos;
+    src: url(FONTS/Salsa-Regular.ttf);
+    font-weight: normal; 
+    font-style: normal;
+}
+@font-face{
+    font-family: links ;
+    src: url(FONTS/Sriracha-Regular.ttf);
+    font-weight: normal; 
+    font-style: normal;
+}
+
+h1{font-family: titulo;}
+h2{font-family: titulo;}
+h3{font-family: titulo;}
+h4{font-family: titulo;}
+p{font-family: parrafos;}
+a{font-family: parrafos;}
+h1 {font-size: 2em; color: #593825; text-align: center;}
+h2 {font-size: 2em; color: #A66B38; text-align: center;}
+h3 {font-size: 2em; color: #736F3D; text-align: center;}
+h4 {font-size: 1.5em; color: #735840; text-align: center;}
+p {font-size: 1.5em; color: #e6e1dc;font-weight: bold; text-align: center;}
+a {font-size: 1.3em; color: #f7f4ea;font-weight: bold; text-align: center;}
+label {font-size: 1.5em; color: #2c2a17;font-weight: bold;}
+span {font-size: 1.5em; color: #2c2a17;font-weight: bold;}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html 
+{
+    scroll-behavior: smooth;
+}
+body
+{
+    background-color: #99C1A5;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cpolygon fill='%23736f53' points='957 450 539 900 1396 900'/%3E%3Cpolygon fill='%23566341' points='957 450 872.9 900 1396 900'/%3E%3Cpolygon fill='%236e654a' points='-60 900 398 662 816 900'/%3E%3Cpolygon fill='%235c5b36' points='337 900 398 662 816 900'/%3E%3Cpolygon fill='%236a5b42' points='1203 546 1552 900 876 900'/%3E%3Cpolygon fill='%2361522f' points='1203 546 1552 900 1162 900'/%3E%3Cpolygon fill='%2364523b' points='641 695 886 900 367 900'/%3E%3Cpolygon fill='%2365482c' points='587 900 641 695 886 900'/%3E%3Cpolygon fill='%235f4835' points='1710 900 1401 632 1096 900'/%3E%3Cpolygon fill='%23673f2d' points='1710 900 1401 632 1365 900'/%3E%3Cpolygon fill='%23593f2f' points='1210 900 971 687 725 900'/%3E%3Cpolygon fill='%23663630' points='943 900 1210 900 971 687'/%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+header
+{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    background: #8c7c4d;
+}
+header h1
+{
+    color: #2c2a17;
+    font-family: titulo;
+}
+
+header ul
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li
+{
+    list-style: none;
+    margin-left: 20px;
+
+}
+header ul li a
+{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: rgb(248, 227, 200);
+    border-radius: 20px;
+
+}
+header ul li a:hover,
+header ul li a.active
+{
+    background: #f0ffff;
+    color: #736F3D;
+}
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.fcarrito {
+    padding: 50px;
+    padding-top: 230px;
+}
+
+
+
+
+
+
+.carritog {
+    padding: 50px;
+    max-width: 800px;
+    margin: 0 auto; 
+    border-radius: 100px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+
+    background-color: #402719;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%234a3521' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%23544428' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%235f5230' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%23696137' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%23736F3F' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
+    background-size: cover;
+
+    border: 15px double #2c2a17;
+}
+
+.form-carrito {
+    background-color: #a1883c7e;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+
+
+    border: solid #2c2a17;
+}
+.form-carrito h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #261810;
+    font-weight: bold;
+}
+
+.form-carrito label {
+    display: block;
+    font-size: 2rem;
+    margin-bottom: 5px;
+}
+
+.form-carrito textarea {
+    background-color: #adc4b4;
+
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 3px solid #261810;
+    border-radius: 15px;
+    font-size: 1rem;
+}
+
+.form-carrito button {
+    background-color: #a59d45; 
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    
+    display: grid;
+    
+}
+
+.form-carrito button:hover {
+    background-color: #6a7334; /* Color más oscuro al pasar el mouse */
+}
+
+.form-carrito input 
+{
+    background-color: #adc4b4;
+
+
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 3px solid #261810;
+    border-radius: 15px;
+    font-size: 1rem;
+}
+
+.form-carrito select {
+    background-color: #adc4b4;
+
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 3px solid #261810;
+    border-radius: 15px;
+    font-size: 1rem;
+}
+
+.form-carrito h2 {
+    font-size: 40px;
+    color: #bea88a;
+    margin-bottom: 20px;
+}
+
+.productos-carrito {
+    margin-bottom: 20px;
+}
+
+.producto {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ffebab;
+}
+
+.producto img {
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    border: 5px solid #2c2a17;
+}
+
+.producto h3 {
+    margin: 0;
+    font-size: 28px;
+
+}
+
+.producto p {
+    font-size: 18px;
+}
+
+.precio, .total-producto {
+    font-size: 24px;
+
+}
+
+
+.cantidad {
+    width: 50px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid #9c866a;
+
+}
+
+#metodoPago {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #9c866a;
+
+    color: #3e5833;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.pie-pagina
+{
+    width: 100%;
+    background-color: #8c7c4d;
+}
+.pie-pagina .grupo-1
+{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    align-items: center;
+    padding: 45px 0px;
+
+    justify-content: space-evenly;
+    display: flex;
+}
+.pie-pagina .grupo-1 .box figure
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img
+{
+    width: 20VH; 
+    border-radius: 10px;
+}
+.pie-pagina .grupo-1 .box h2
+{
+    color: #d6cfb6;
+    margin-bottom: 25px;
+    font-size: 27px;
+}
+.pie-pagina .grupo-1 .box p
+{
+    color: #BFBAA8;
+    margin-bottom: 10px;
+}
+.pie-pagina .grupo-1 .red-social
+{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+.pie-pagina .grupo-1 .red-social a
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie-pagina .grupo-1 .red-social a img
+{
+    width: 40px;
+    height: 40px;
+}
+
+.pie-pagina .grupo-2
+{
+    background-color: #5a5030;
+    padding: 15px 10px;
+    text-align: center;
+    color: #e4d6c6;
+    font-weight: bold;
+}
+.pie-pagina .grupo-2 small
+{
+    font-size: 15px;
+}
+
+.pie-pagina .grupo-1 .box .gmail p
+{
+    color: #f7ffc8;
+    font-size: 20px;
+    margin-bottom: auto;
+}
+
+
+@media screen and (max-width:780px){
+/*---------------------------------------------------------*/
+    header ul{
+        display: inline;
+        }
+        header ul li{
+        margin-top: 10px;
+        }
+        .cantidad {
+    width: 70px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid #9c866a;
+}
+}
+

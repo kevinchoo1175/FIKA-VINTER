@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIKA VINTER</title>
+    <link rel="icon" type="img/png" href="ICONS/LOGO.png">
+    <link rel="stylesheet" href="STYLE_1.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="scripts.js"></script>
+</head>
+<body>
+    <header>  
+            <a href="#" clas="logo">
+                <img src="ICONS/LOGO.png" width="180px">
+            </a>
+            <h1>Fika Vinter</h1>
+        
+        <ul>
+            <li> <a href="INDEX_1.html" class="active">Inicio</a></li>
+            <li> <a href="INDEX_2.html">Contacto</a></li>
+            <li> <a href="INDEX_3.html">Carrito</a></li>
+            <li> <a href="INDEX_4.html">Registro</a></li>
+        </ul>
+        
+    </header>
+
+
+
+    <section id="inicio">
+        <div class="inicio-h1">
+            <h1>FIKA & VINTER</h1>
+        </div>
+        <a href="#conocenos">
+            <button class="boton" data-text="genial">
+                <span class="botoncito">&nbsp;¡CONOCENOS!&nbsp;</span>
+                <span aria-hidden="true" class="sobre-boton">&nbsp;¡CONOCENOS!&nbsp;</span>
+            </button>
+        </a>
+    </section>
+
+
+
+
+
+
+
+
+<!--MODAL-------------------------------------------------------------------------------------------------------------------------------------------->
+
+<div id="bot-fijo" onclick="openModal('modal-bot', '', 'Este es tu bot activo. Puedes modificar el mensaje o agregar acciones como un chat.')">
+        <button><img src="IMG/Panteon.png" alt=""></button> 
+    </div>
+    <div id="modal-bot" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal-bot')">&times;</span>
+            <h2 id="modal-bot-title"></h2>
+            <p id="modal-bot-message"></p>
+            <button class=""onclick="closeModal('modal-bot')">Cerrar</button>
+        </div>
+    </div>
+<!--FIN MODAL--------------------------------------------------------------------------------------------------------------------------------------->
+
+
+<!--  carrusel -------------------------------------------------------------------->
+    <div class="carrusel">
+        <div class="container">
+            <input type="radio" name="slide" id="c1" >
+            <label for="c1" class="card">
+                <div class="row">
+                    <div class="icono">
+                        <a class="btnc" href="#productos">></a>
+                    </div>
+                    <div class="descripcion">
+                        <div class="COLOR2"><h4>¡Calaba-dulces!</h4></div>
+                        <p>El mejor postre para halloween</p>
+
+                    </div>
+                </div>
+            </label>
+
+            <input type="radio" name="slide" id="c2" >
+            <label for="c2" class="card">
+                <div class="row">
+                    <div class="icono">
+                        <a class="btnc" href="#productos">></a>
+                    </div>
+                    <div class="descripcion">
+                        <div class="COLOR"><h4>¡Capucinos!</h4></div>
+                        <p>Disponibles capuccinos para el invierno</p>
+                    </div>
+                </div>
+            </label>
+
+            <input type="radio" name="slide" id="c3" >
+            <label for="c3" class="card">
+                <div class="row">
+                    <div class="icono">
+                        <a class="btnc" href="#productos">></a>
+                    </div>
+                    <div class="descripcion">
+                        <div class="COLOR2"><h4>¡Baguettes!</h4></div>
+                        <p>Poco tradicional pero muy disfrutable ♡</p>
+                    </div>
+                </div>
+            </label>
+
+            <input type="radio" name="slide" id="c4" >
+            <label for="c4" class="card">
+                <div class="row">
+                    <div class="icono">
+                        <a class="btnc" href="#productos">></a>
+                    </div>
+                    <div class="descripcion">
+                        <div class="COLOR"><h4>¡Combo de madrugada!</h4></div>
+                        <p>Para aquellos que madrugan y quieren desallunar algo rico</p>
+                    </div>
+                </div>
+            </label>
+
+            <input type="radio" name="slide" id="c5" >
+            <label for="c5" class="card">
+                <div class="row">
+                    <div class="icono">
+                        <a class="btnc" href="#productos">></a>
+                    </div>
+                    <div class="descripcion">
+                        <div class="COLOR2"><h4>¡Pie!</h4></div>
+                        <p>Delicioso Pie de manzana para comportir con los que quieres</p>
+                    </div>
+                </div>
+            </label>
+            
+            <input type="radio" name="slide" id="c6" >
+            <label for="c6" class="card">
+                <div class="row">
+                    <div class="icono">
+                        <a class="btnc" href="#productos">></a>
+                    </div>
+                    <div class="descripcion">
+                        <div class="COLOR"><h4>¡Pan integral!</h4></div>
+                        <p>Pan integral hecho a mano para aquellos que disfrutan lo casero</p>
+                    </div>
+                </div>
+            </label>
+        </div>
+    </div>
+<!--  FIN carrusel -------------------------------------------------------------------->
+<!--  noticias -------------------------------------------------------------------->
+    <div class="noticias">
+        <div class="ncard">
+            <img src="IMG/n1.jpg">
+            <div class="informacion">
+                <h1>SOBRE EL PAN...</h1>
+                <p>Nos gusta que nuestros panes y postres sean total mente caseros
+                    por ende no hay ni un pan hecho artificial mente o con maquinas</p>
+                <a href="#conocenos" class="btn">¡Leer Mas!</a>
+            </div>
+        </div>
+
+        <div class="ncard">
+            <img src="IMG/n2.jpg">
+            <div class="informacion">
+                <h1>NUESTRA HISTORIA...</h1>
+                <p>Todo este proyecto nace de las costumbre escandinavas del fika, y 
+                    nuestro objetivo siempre fue promover lo que busca dicha tradicion,
+                     lo cual es un lugar comodo y acogedor en el cual compartir un pan 
+                     o un postre rico con cafe o chocolate junto con las personas que quieres</p>
+                <a href="#conocenos" class="btn">¡Leer Mas!</a>
+            </div>
+        </div>
+
+        <div class="ncard">
+            <img src="IMG/n3.jpg">
+            <div class="informacion">
+                <h1>MES FESTIVO!!!...</h1>
+                <p>Ya llego el otoño y se acerca Halloween, que mejor que pasar esta 
+                    epoca probando un buen cafe junto con un delicioso pan o algun
+                     postre mientras disfrutas del otoño con los que quieres, ven a ver
+                      nuestras nuevas recetas de otoñoy halloween!!!</p>
+                <a href="#productos" class="btn">¡Leer Mas!</a>
+            </div>
+        </div>
+    </div>
+<!--  FIN noticias -------------------------------------------------------------------->
+<!--  conocenos -------------------------------------------------------------------->
+<section id="conocenos">
+     <div class="conocenos" href="#conocenos">
+        <img src="IMG/FIKA VINTER.jpg">
+     </div>
+
+     <div class="contenedor">
+        <h2 class="texto-centrado">Quienes somos?</h2>
+        <p class="texto-centrado">Somos una pagina que busca ayudar a la gente que no puede hayar manera de mostrar y o vender<br class="responsive-br">
+             sus productos, por lotano nosotros creamos un ablero en el que podran presentar o vender sus productos.</p>
+     </div>
+     
+    <div class="trabajadores">
+
+        <div class="trabajador">
+            <div class="t-img"><img src="IMG/empl-1.jpg" alt="Foto del trabajador 1"></div>
+            <div class="reviews">
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star-half' ></i>
+                <i class='bx bx-star' ></i>
+            </div>
+            <h3>Sofia Valdez</h3>
+            <h4>Jefa de Repostería</h4>
+            <p>Sofia es una apasionada de la repostería, siempre experimentando con sabores y presentaciones elegantes que sorprenden a todos</p>
+        </div>
+
+        <div class="trabajador">
+            <div class="t-"><img src="IMG/empl-2.jpg" alt="Foto del trabajador 2"></div>
+            <div class="reviews">
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star-half' ></i>
+            </div>
+            <h3>Mateo Romero</h3>
+            <h4>Gerente de Operaciones</h4>
+            <p>Mateo, carismático y organizado, es el corazón de la panadería, garantizando que todo funcione de manera eficiente y armoniosa.</p>
+        </div>
+
+        <div class="trabajador">
+            <div class="t-img"><img src="IMG/empl-3.jpg" alt="Foto del trabajador 3"></div>
+            <div class="reviews">
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bx-star' ></i>
+            </div>
+            <h3>Leonardo Silva </h3>
+            <h4>Atendedor de Caja y Pedidos</h4>
+            <p>Leonardo es el rostro amigable de la panadería, disfrutando de cada interacción con los clientes y haciendo que su experiencia sea inolvidable.</p>
+        </div>
+
+    </div>
+</section>
+<!--  FIN conocenos -------------------------------------------------------------------->
+<!--  productos     -------------------------------------------------------------------->
+<section class="productos" id="productos">
+
+    <div class="grid-productos">
+        <div>
+            <h2 class="texto-centrado-2">Nuestros Productos</h2>
+        </div>
+        <div class="tarjetas_p">
+        <div class="postproducto">
+
+        <div class="producto">
+            <img src="IMG/P1.jpg" alt="Producto 1">
+            <h3>Roscas</h3>
+            <p>Deliciosas Roscas con relleno de arequipe</p>
+            <span>$4.500</span>
+            <button><a href="INDEX_3.html">Comprar</a></button>
+        </div>
+        <div class="producto">
+            <img src="IMG/P2.jpg" alt="Producto 2">
+            <h3>Pie de manzana</h3>
+            <p>Exquisito pie con un calido interior se manzana</p>
+            <span>$20.000</span>
+            <button><a href="INDEX_3.html">Comprar</a></button>
+        </div>
+        <div class="producto">
+            <img src="IMG/P3.jpg" alt="Producto 3">
+            <h3>Baguettes</h3>
+            <p>Crujientes y delicioso panes franceses disponibles ahora</p>
+            <span>$3.500</span>
+            <button><a href="INDEX_3.html">Comprar</a></button>
+        </div>
+        <div class="producto">
+            <img src="IMG/P4.jpg" alt="Producto 4">
+            <h3>Combo de madrugada</h3>
+            <p>Conjunto unos croasant y un cafe para empesar el dia</p>
+            <span>$12.000</span>
+            <button><a href="INDEX_3.html">Comprar</a></button>
+        </div>
+    </div>
+    <div class="postproducto">
+        <div class="producto">
+            <img src="IMG/P5.jpg" alt="Producto 5">
+            <h3>Capucino</h3>
+            <p>Deliciosos, Dulces y Cremosos capuccinos con un aroma unico</p>
+            <span>$6.500</span>
+            <button><a href="INDEX_3.html">Comprar</a></button>
+        </div>
+        <div class="producto">
+            <img src="IMG/P6H.jpg" alt="Producto 6">
+            <h3>Halloween-CupCake</h3>
+            <p>Dulce y bonito postre con glaceados sabor calabaza y banana</p>
+            <span>$2.500</span>
+            <button><a href="INDEX_3.html">Comprar</a></button>
+        </div>
+        <div class="producto">
+            <img src="IMG/P7H.jpg" alt="Producto 7">
+            <h3>Otoñal cookies</h3>
+            <p>Crujientes y deliciosas galletas con diseños enfocados al otoño</p>
+            <span>$1.000</span>
+            <button><a href="INDEX_3.html">Comprar</a></button>
+        </div>
+        <div class="producto">
+            <img src="IMG/P8H.jpg" alt="Producto 8">
+            <h3>Merenges calabaza</h3>
+            <p>Suaves y Deliciosos postres con forma de calabaza para halloween</p>
+            <span>$800 
+            </span>
+            <button><a href="INDEX_3.html">Comprar</a></button>
+        </div>
+    </div>
+    </div>
+    </div>
+</section>
+<!--  Fin productos -------------------------------------------------------------------->
+
+<div class="disenop">   </div>
+
+<!--  comentarios -------------------------------------------------------------------->
+<div class="fcomentarios">
+<section class="comentarios">
+    <h2>Comentarios</h2>
+
+
+    <!-- Comentarios existentes -->
+    <div class="comentario">
+        <h3>Michelle Pérez</h3>
+        <p>bao</p>
+        <span>Publicado el 10 de octubre de 2024</span>
+    </div>
+
+    <div class="comentario">
+        <h3>Juliana Ramirez</h3>
+        <p>zapata care qlo</p>
+        <span>Publicado el 8 de octubre de 2024</span>
+    </div>
+
+    <!-- Formulario para añadir un comentario nuevo -->
+    <form class="form-comentario">
+        <h3>Deja tu comentario</h3>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+
+        <label for="comentario">Comentario:</label>
+        <textarea id="comentario" name="comentario" rows="4" placeholder="Escribe tu comentario aquí" required></textarea>
+
+        <div class="enviar"><button type="submit">Enviar comentario</button></div>
+    </form>
+
+</section>
+</div>
+<!--  Fin comentarios -------------------------------------------------------------------->
+<!--  pie de pagina -------------------------------------------------------------------->
+<footer class="pie-pagina">
+    <div class="grupo-1">
+        <div class="box">
+            <figure>
+                <a href="#">
+                    <img src="ICONS/LOGO.png" >
+                </a>
+            </figure>
+        </div>
+        <div class="box">
+            <h2>SIGUENOS</h2>
+            <div class="red-social">
+                <a href="#" class="fa-f">
+                    <img loading="lazy" class="responsive-image"
+                    title="fa-facebook" style="opacity: 1;" src="ICONS/facebook.png">
+                </a>
+                <a href="#" class="fa-i">
+                    <img loading="lazy" class="responsive-image" 
+                    title="fa-facebook" style="opacity: 1;" src="ICONS/logotipo-de-instagram.png">
+                </a>
+                <a href="#" class="fa-t">
+                    <img loading="lazy" class="responsive-image" 
+                    title="fa-facebook" style="opacity: 1;" src="ICONS/tik-tok.png">
+                </a>
+            </div>
+            <div class="gmail">
+                <a href="#" class="gmail">
+                    <p>Fika&Vinter@gmail.com</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="grupo-2">
+        <small>&copy; 2024 <b>FIKA & VINTER</b> - Todos los Derechos Reservados.</small>
+    </div>
+</footer>
+<!--  Fin pie de pagina -------------------------------------------------------------------->
+</body>
+</html>
